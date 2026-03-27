@@ -1,5 +1,6 @@
 package com.abelvolpi.mydailyschedule.widget
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import androidx.compose.runtime.Composable
@@ -67,6 +68,7 @@ class SchedulerWidget : GlanceAppWidget() {
     }
 }
 
+@SuppressLint("RestrictedApi")
 @Composable
 private fun WidgetContent(
     currentTime: String,
@@ -134,6 +136,7 @@ private fun WidgetContent(
     }
 }
 
+@SuppressLint("RestrictedApi")
 @Composable
 private fun TaskRow(task: Task) {
     val taskColor = Color(android.graphics.Color.parseColor(task.colorHex))
@@ -146,8 +149,9 @@ private fun TaskRow(task: Task) {
             modifier = GlanceModifier
                 .size(10.dp)
                 .background(ColorProvider(taskColor))
-                .cornerRadius(5.dp)
-        )
+                .cornerRadius(5.dp),
+            contentAlignment = Alignment.Center
+        ) {}
         Spacer(modifier = GlanceModifier.width(6.dp))
         Text(
             text = "${String.format("%02d:%02d", task.startHour, task.startMinute)}  ${task.title}",
