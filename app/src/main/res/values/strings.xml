@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyDailySchedule</string>
+    <string name="widget_description">Shows your remaining tasks for today</string>
+</resources>
