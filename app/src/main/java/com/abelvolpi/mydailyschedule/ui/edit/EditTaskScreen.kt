@@ -93,7 +93,7 @@ fun EditTaskScreen(
                 },
                 actions = {
                     IconButton(onClick = { showDeleteDialog = true }) {
-                        Icon(Icons.Default.Delete, contentDescription = "Delete", tint = Color(0xFFFF5252))
+                        Icon(Icons.Default.Delete, contentDescription = "Delete", tint = Color.White)
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = DarkBackground)
