@@ -1,6 +1,12 @@
-# MyDailySchedule
+# 📅 MyDailySchedule
 
 MyDailySchedule is an Android application designed to help you organize and visualize your daily tasks on a 24-hour timeline. You can schedule tasks with custom colors and durations, track real-time progress, and even check upcoming tasks directly from your home screen widget.
+
+<p float="left">
+  <img src="img/img_2.jpg" width="20%"/>
+  <img src="img/img_3.jpg" width="20%"/>
+  <img src="img/img_4.jpg" width="20%"/>
+</p>
 
 ## 🛠 Architecture
 This app was developed using the [MVVM](https://developer.android.com/topic/architecture) architecture pattern with a Repository layer for data abstraction.
